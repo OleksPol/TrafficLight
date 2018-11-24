@@ -24,3 +24,6 @@ add_executable(${EXECUTABLE_NAME}
 
         )
 
+find_package( Curses REQUIRED )
+include_directories( ${CURSES_INCLUDE_DIRS} )
+target_link_libraries( TrafficLight ${CURSES_LIBRARIES} )

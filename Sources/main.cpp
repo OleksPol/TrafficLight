@@ -17,7 +17,6 @@ using namespace std;
 
 void startTrafficLight() {
     TrafficLight trafficLight;
-    system("mode con cols=100 lines=50");
     cout << "***********************INTERFACE BUILDER********************" << endl;
     cout << "********YOU CAN USE S,s-Start, P,p-Pause, E,e-Escape********" << endl;
     char input;
@@ -47,6 +46,6 @@ int main(int argc, char* argv[]) {
 
     startTrafficLight();
 
-
+    
     return 0;
 }
