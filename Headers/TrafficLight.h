@@ -2,8 +2,7 @@
 // Created by aleksandr on 24.11.18.
 //
 
-#ifndef TRAFFICLIGHT_TRAFFICLIGHT_H
-#define TRAFFICLIGHT_TRAFFICLIGHT_H
+#pragma once
 #include "TrafficState.h"
 
 class TrafficLight {
@@ -17,4 +16,3 @@ private:
 };
 
 
-#endif //TRAFFICLIGHT_TRAFFICLIGHT_H

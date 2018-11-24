@@ -2,8 +2,7 @@
 // Created by aleksandr on 24.11.18.
 //
 
-#ifndef TRAFFICLIGHT_TRAFFICTIMER_H
-#define TRAFFICLIGHT_TRAFFICTIMER_H
+#pragma once
 
 
 class TrafficTimer {
@@ -12,4 +11,3 @@ public:
 };
 
 
-#endif //TRAFFICLIGHT_TRAFFICTIMER_H
