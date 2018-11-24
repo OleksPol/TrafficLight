@@ -4,4 +4,6 @@
 
 #include "../Headers/TrafficState.h"
 
-TrafficState::~TrafficState() {}
+TrafficState::~TrafficState() {
+
+}

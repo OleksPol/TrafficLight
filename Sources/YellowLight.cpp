@@ -16,7 +16,7 @@ void YellowLight::Handle() {
 
 }
 
-YellowLight::YellowLight(TrafficLight *context): _context(context) {};
+YellowLight::YellowLight(TrafficLight *context): _context(context) {}
 
 YellowLight::~YellowLight() {
 

@@ -3,6 +3,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <ctime>
+
 using namespace std;
 
 
@@ -12,6 +13,7 @@ using namespace std;
 #include "../Headers/RedLight.h"
 #include "../Headers/TrafficTimer.h"
 #include "../Headers/TrafficLight.h"
+#include "../Headers/TrafficState.h"
 
 void startTrafficLight() {
     TrafficLight trafficLight;
@@ -40,7 +42,7 @@ void startTrafficLight() {
 
 
 
-int main() {
+int main(int argc, char* argv[]) {
 
 
     startTrafficLight();

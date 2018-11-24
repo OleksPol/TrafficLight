@@ -5,6 +5,7 @@
 #include "../Headers/TrafficTimer.h"
 #include <ncurses.h>
 #include <cstdlib>
+#include <ctime>
 
 void TrafficTimer::sleep(int seconds) {
 

@@ -16,7 +16,7 @@ void GreenLight::Handle() {
     TrafficPicture::drawTrafficLight(5, "\033[1;32m");
 }
 
-GreenLight::GreenLight(TrafficLight *context): _context(context) {};
+GreenLight::GreenLight(TrafficLight *context): _context(context) {}
 
 
 GreenLight::~GreenLight() {

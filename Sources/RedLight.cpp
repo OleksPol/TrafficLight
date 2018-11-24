@@ -10,13 +10,17 @@
 
 void RedLight::Handle() {
     system("cls");
-    TrafficPicture::drawTrafficLight(5, "\033[1;31m");
+    TrafficPicture::drawTrafficLight(5, "\033[1;30m");
     TrafficPicture::drawTrafficLight(5, "\033[0m");
     TrafficPicture::drawTrafficLight(5, "\033[0m");
 }
 
-RedLight::RedLight(TrafficLight *context): _context(context) { };
+
+
+
 
 RedLight::~RedLight() {
 
 }
+
+RedLight::RedLight(TrafficLight *context): _context(context) { }
