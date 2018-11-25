@@ -19,6 +19,8 @@ void startTrafficLight() {
     TrafficLight trafficLight;
     cout << "***********************INTERFACE BUILDER********************" << endl;
     cout << "********YOU CAN USE S,s-Start, P,p-Pause, E,e-Escape********" << endl;
+    initscr();
+    noecho();
     char input;
     input = getch();
     if (input == 'S' || input == 's') {
@@ -36,7 +38,7 @@ void startTrafficLight() {
             TrafficTimer::sleep(3000);
         }
     }
-
+    endwin();
 }
 
 
@@ -46,6 +48,6 @@ int main(int argc, char* argv[]) {
 
     startTrafficLight();
 
-    
+
     return 0;
 }

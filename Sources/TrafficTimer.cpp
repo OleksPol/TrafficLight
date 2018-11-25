@@ -11,6 +11,8 @@ void TrafficTimer::sleep(int seconds) {
 
     while(seconds > 0) {
         sleep(100);
+        initscr();
+        noecho();
         char firstKey = getch();
         if(firstKey == 'p' || firstKey == 'P') {
             while(true) {
@@ -19,14 +21,15 @@ void TrafficTimer::sleep(int seconds) {
                     break;
                 if (secondKey == 'e' || secondKey == 'E'){
                     exit(0);
-                    system("cls");
+                    std::system("clear");
                 }
             }
         }
         if (firstKey == 'e' || firstKey == 'E') {
             exit(0);
-            system("cls");
+            std::system("clear");
         }
     }
     seconds = seconds -100;
+    endwin();
 }

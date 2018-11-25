@@ -7,9 +7,12 @@
 #include "../Headers/TrafficPicture.h"
 #include "../Headers/GreenLight.h"
 #include "../Headers/RedLight.h"
+#include "../Headers/TrafficTimer.h"
+#include "../Headers/SLogger.h"
 
 void YellowLight::Handle() {
-    system("cls");
+    SLogger::GetLogger()->Log("waiting for preview");
+    system("clear");
     TrafficPicture::drawTrafficLight(5, "\033[0m");
     TrafficPicture::drawTrafficLight(5, "\033[1;31m");
     TrafficPicture::drawTrafficLight(5, "\033[0m");

@@ -8,9 +8,11 @@
 #include "../Headers/GreenLight.h"
 #include "../Headers/RedLight.h"
 #include "../Headers/TrafficTimer.h"
+#include "../Headers/SLogger.h"
 
 void GreenLight::Handle() {
-    system("cls");
+    SLogger::GetLogger()->Log("nice to meet yo");
+    system("clear");
     TrafficPicture::drawTrafficLight(5, "\033[0m");
     TrafficPicture::drawTrafficLight(5, "\033[0m");
     TrafficPicture::drawTrafficLight(5, "\033[1;32m");

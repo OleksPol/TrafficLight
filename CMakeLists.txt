@@ -13,6 +13,7 @@ add_executable(${EXECUTABLE_NAME}
         Sources/TrafficState.cpp
         Sources/TrafficTimer.cpp
         Sources/RedLight.cpp
+        Sources/SLogger.cpp
 
         Headers/GreenLight.h
         Headers/YellowLight.h
@@ -21,6 +22,8 @@ add_executable(${EXECUTABLE_NAME}
         Headers/TrafficTimer.h
         Headers/TrafficLight.h
         Headers/TrafficState.h
+        Headers/SLogger.h
+        Headers/Utilities.h
 
         )
 
