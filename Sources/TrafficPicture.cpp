@@ -11,8 +11,6 @@ void TrafficPicture::drawTrafficLight(int rect, char *textColor) {
     for (int y = width; y >= -width; y -= 2)  {
         for (int x = -height; x <= height; x++)  {
             cout<<  textColor << "@";
-            cout << " ";
-
         }
         cout << "\n";
     }

@@ -13,9 +13,9 @@
 void RedLight::Handle() {
     SLogger::GetLogger()->Log("nice Sir");
     system("clear");
-    TrafficPicture::drawTrafficLight(5, "\033[1;30m");
-    TrafficPicture::drawTrafficLight(5, "\033[0m");
-    TrafficPicture::drawTrafficLight(5, "\033[0m");
+    TrafficPicture::drawTrafficLight(5, (char*)"\033[1;30m");
+    TrafficPicture::drawTrafficLight(5, (char*)"\033[0m");
+    TrafficPicture::drawTrafficLight(5, (char*)"\033[0m");
 }
 
 

@@ -4,11 +4,12 @@
 
 #include "../Headers/TrafficLight.h"
 #include "../Headers/RedLight.h"
-#include "../Headers/GreenLight.h"
-#include "../Headers/YellowLight.h"
+#include "../Headers/SLogger.h"
 #include <cstddef>
 
 TrafficLight::TrafficLight() {
+    SLogger::GetLogger()->Log("firstlog!");
+    _state = new RedLight(this);
 }
 
 void TrafficLight::setState(TrafficState *state) {

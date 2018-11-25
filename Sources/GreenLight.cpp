@@ -13,9 +13,9 @@
 void GreenLight::Handle() {
     SLogger::GetLogger()->Log("nice to meet yo");
     system("clear");
-    TrafficPicture::drawTrafficLight(5, "\033[0m");
-    TrafficPicture::drawTrafficLight(5, "\033[0m");
-    TrafficPicture::drawTrafficLight(5, "\033[1;32m");
+    TrafficPicture::drawTrafficLight(5, (char*)"\033[0m");
+    TrafficPicture::drawTrafficLight(5, (char*)"\033[0m");
+    TrafficPicture::drawTrafficLight(5, (char*)"\033[1;32m");
 }
 
 GreenLight::GreenLight(TrafficLight *context): _context(context) {}

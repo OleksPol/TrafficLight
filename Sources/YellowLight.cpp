@@ -13,9 +13,9 @@
 void YellowLight::Handle() {
     SLogger::GetLogger()->Log("waiting for preview");
     system("clear");
-    TrafficPicture::drawTrafficLight(5, "\033[0m");
-    TrafficPicture::drawTrafficLight(5, "\033[1;31m");
-    TrafficPicture::drawTrafficLight(5, "\033[0m");
+    TrafficPicture::drawTrafficLight(5, (char*)"\033[0m");
+    TrafficPicture::drawTrafficLight(5, (char*)"\033[1;31m");
+    TrafficPicture::drawTrafficLight(5, (char*)"\033[0m");
 
 }
 
